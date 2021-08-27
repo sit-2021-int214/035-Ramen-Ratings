@@ -1,5 +1,5 @@
 # GroupID-Datasetname
-Datasets from: [NAME](link)
+Datasets from: [Ramen Ratings](https://www.kaggle.com/residentmario/ramen-ratings)
 
 ## Objective
 
@@ -9,11 +9,10 @@ Datasets from: [NAME](link)
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
-### Team: nameXXXXXX
-1. นางสาวสาริศา ภูละคร     StudentID: 63130500116
-2. นายสิรภพ ภัทรเกษวิทย์     StudentID: 63130500119
-3. นายธนัตถ์ ลีเรืองกิจ     StudentID: 63130500156
-
+### Team: แอร์ไม่เย็น
+1. นายวงศกร   แสงสุรศักดิ์      Student ID: 63130500102
+2. นายหิรัณย์   คงเพ็ชร         Student ID: 63130500127
+3. นายชญาธร  เลิศทัศนวงศ์    	 Student ID: 63130500139
 
 
 ### Instructor
