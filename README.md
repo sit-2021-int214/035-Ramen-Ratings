@@ -14,6 +14,12 @@ Datasets from: [Ramen Ratings](https://www.kaggle.com/residentmario/ramen-rating
 2. นายหิรัณย์     คงเพ็ชร         StudentID: 63130500127
 3. นายชญาธร    เลิศทัศนวงศ์      StudentID: 63130500139
 
+| No. | Name              | Student ID   |
+|:---:|-------------------|--------------|
+|  1  | นาย วงศกร แสงสุรศักดิ์      | 63130500102  |
+|  2  | นาย หิรัณย์ คงเพ็ชร   | 63130500127  |
+|  3  | นาย นายชญาธร เลิศทัศนวงศ์   | 63130500139 |
+
 ### Instructor
 - ATCHARA TRAN-U-RAIKUL
 - JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
