@@ -1,4 +1,4 @@
-# Group035-Ramen-Ratings
+# 035-Ramen-Ratings
 Datasets from: [Ramen Ratings](https://www.kaggle.com/residentmario/ramen-ratings)
 
 ## Objective
