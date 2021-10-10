@@ -12,7 +12,7 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 6. Top Ten
 
 ## Overview
-
+กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษาการจัดอันดับของราเมง โดยใช้เวปไซต์ kaggle.com ที่มีการรวบรวมข้อมูลของราเมงไว้มากมาย เพื่อทำการศึกษาและนำมาทำความสะอาดและวิเคราะห์โดยใช้ภาษา R
 
 ### Steps
 
