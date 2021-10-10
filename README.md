@@ -1,7 +1,15 @@
 # 035-Ramen-Ratings
 Datasets from: [Ramen Ratings](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings.csv)
 
-## Objective
+## About's Ramen Ratings Datasets
+
+This dataset is about's over 2500 ramen ratings that are collected from around the world. This dataset has 2580 observations with 6 variables. It includes
+1. Brand
+2. Variety
+3. Style
+4. Country
+5. Stars
+6. Top Ten
 
 ## Process
 
