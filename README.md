@@ -11,9 +11,39 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 5. Stars
 6. Top Ten
 
-## Process
+## Overview
 
-## Result
+
+### Steps
+
+1. Define a question
+2. Collect Data by using survey method
+3. Export Data from Google sheet
+4. Explore Data from Original Data
+5. Data Cleaning and Data Transformation
+6. Exploratory Data Analysis
+
+### Tools
+
+- R Language
+- R Studio Desktop
+
+## Table of Contents
+
+1. [Define a question]()
+2. [Data Cleaning and Data Transformation]()
+3. [Exploratory Data Analysis]()
+
+## Resources
+
+### Important Files in Repository
+
+- 
+- 
+
+### References
+
+
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
