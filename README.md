@@ -1,5 +1,5 @@
 # 035-Ramen-Ratings
-Datasets from: [Ramen Ratings](https://www.kaggle.com/residentmario/ramen-ratings)
+Datasets from: [Ramen Ratings](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings.csv)
 
 ## Objective
 
