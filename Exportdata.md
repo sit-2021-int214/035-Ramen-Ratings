@@ -10,3 +10,8 @@ Dataset from : https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ra
 6. Exploratory Data Analysis
 
 # Defind a question
+1.
+2.
+3.
+4.
+5.
