@@ -14,7 +14,7 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 ## Overview
 เมื่อเราพูดถึง Ramen คงคิดว่าอาหารนี้อยู่ที่ประเทศญี่ปุ่นเพียงประเทศเดียว แต่ที่จริงแล้ว ramen นั้นมีหลายประเทศทั่วโลกที่ให้ความสนใจและนำมันไปขายในประเทศของตนเองจนเกิดอุสาหกรรม ramen ขึ้น ซึ่งกลุ่มของเราได้สนใจในอุสาหกรรมของ ramen และต้องการศึกษาข้อมูลของ ramen ทั่วโลก กลุ่มของเราจึงเลือกชุดข้อมูล Ramen Ratings เพราะต้องการศึกษา ความนิยมหรือความชื่นชอบของผู้คนที่มีผลต่ออุตสาหกรรม ramen ว่ามีมากแค่ไหน และอุตสาหกรรม ramen นั้นมีที่ไหนบ้าง และที่ไหนที่ได้รับความนิยมมากที่สุด
 
-### Steps
+## Steps
 
 1. Define a question
 2. Collect Data by using survey method
@@ -23,12 +23,12 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 5. Data Cleaning and Data Transformation
 6. Exploratory Data Analysis
 
-### Tools
+## Tools
 
 - [R Studio Desktop](https://www.rstudio.com/)
 - [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel)
 
-### Languages
+## Languages
 
 - [R language](https://www.r-project.org/)
 
