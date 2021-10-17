@@ -10,4 +10,7 @@ Dataset from : https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ra
 6. Exploratory Data Analysis
 
 # Defind a question
+1. Sytle ของราเมงมีทั้งหมดกี่แบบ แต่ละแบบมีเท่าไหร่
+2. จงแสดง Type of Ramen ที่ Stars เท่ากับ5
+3. จงแสดง Brand ที่ผลิตในประเทศไทยทั้งหมด
 
