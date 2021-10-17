@@ -45,8 +45,6 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 - Original Dataset: [ramen-ratings.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings.csv)
 - Clean Dataset: [ramen_clean.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen_clean.csv)
 
-### References
-
 https://www.kaggle.com/residentmario/ramen-ratings
 
 ## About Us
