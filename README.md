@@ -43,7 +43,7 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 ### Important Files in Repository
 
 - Exploratory Data Analysis: [code_eda.R](#) 
-- Original Dataset: [ramen_original.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings.csv)
+- Original Dataset: [ramen-ratings.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings.csv)
 - Clean Dataset: [ramen_clean.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen_clean.csv)
 
 ### References
