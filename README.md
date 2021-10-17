@@ -25,8 +25,12 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 
 ### Tools
 
-- R Language
-- R Studio Desktop
+- [R Studio Desktop](https://www.rstudio.com/)
+- [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel)
+
+### Languages
+
+- [R language](https://www.r-project.org/)
 
 ## Table of Contents
 
@@ -38,8 +42,9 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 
 ### Important Files in Repository
 
-- 
-- 
+- Exploratory Data Analysis: [code_eda.R](#) 
+- Original Dataset: [ramen_original.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings.csv)
+- Clean Dataset: [ramen_clean.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen_clean.csv)
 
 ### References
 
