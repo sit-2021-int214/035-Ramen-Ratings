@@ -11,7 +11,8 @@ Dataset from : https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ra
 7. Exploratory Data Analysis with Stat
 
 ## Step 1 Search datasets from Kaggle
-
+เนื่องจากพวกเรามีความสนใจในรสชาติของราเม็ง เราจึงทำการหา dataset จาก kaggle และไปเจอกับ dataset ramen ratings มาจึงนำ dataset นี้มาใช้
+dataset จาก : https://www.kaggle.com/residentmario/ramen-ratings?select=ramen-ratings.csv
 
 ## Step 2 Explore the dataset from the original dataset
 
