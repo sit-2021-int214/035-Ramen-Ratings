@@ -36,7 +36,6 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./exportdata.md)
-2. [Data Visualization](#)
 
 ## Resources
 
