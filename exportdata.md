@@ -54,11 +54,11 @@ ramen <- ramen_rating
 และ column stars ต้องการให้เก็บแค่ numeric เพราะ มีการเก็บค่าทั้งตัวเลขและคำว่า unrate เราจึงทำการ นำ unrated ออก เพื่อให้เก็บค่าเป็นตัวเลขเพียงอย่างเดียว
 
 ## Step 5 Cleaning Dataset
-# Check type ของ dataset
+### Check type ของ dataset
 ```{R}
 glimpse(ramen_rating)
 ```
-# Result
+### Result
 ```{R}
 Rows: 2,580
 Columns: 7
@@ -71,7 +71,7 @@ $ Stars    <chr> "3.75", "1", "2.25", "2.75", "3.75", "4.75", "4", "3.75", "0.25
 $ Top.Ten  <chr> "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""~
 ```
 
-# เปลี่ยนชื่อตัวแปร
+### เปลี่ยนชื่อตัวแปร
 ```{R}
 ramen <- ramen %>% rename(
   
@@ -81,17 +81,17 @@ ramen <- ramen %>% rename(
   )
 ```
 
-# จัดเรียงข้อมูล
+### จัดเรียงข้อมูล
 ```{R}
 ramen <- ramen %>% arrange(ramen,Review_Number)
 ```
 
-# ลบ column Top ten ออก
+### ลบ column Top ten ออก
 ```{R}
 ramen <- ramen %>% select(-Top.Ten)
 ```
 
-# แปลงข้อมูลจาก character เป็น numeric
+### แปลงข้อมูลจาก character เป็น numeric
 ```{R}
 is.numeric(ramen$Stars)
 ramen$Stars <- ramen$Stars %>% str_remove("Unrated") %>% as.numeric() 
