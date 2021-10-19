@@ -4,12 +4,13 @@ Datasets from: [Ramen Ratings](https://github.com/sit-2021-int214/035-Ramen-Rati
 ## About's Ramen Ratings Datasets
 
 This dataset is about's over 2500 ramen ratings that are collected from around the world. This dataset has 2580 observations with 6 variables. It includes
-1. `Brand` 
-2. `Variety` 
-3. `Style` 
-4. `Country` 
-5. `Stars` 
-6. `Top Ten` 
+1. `Review #`
+2. `Brand` 
+3. `Variety` 
+4. `Style` 
+5. `Country` 
+6. `Stars` 
+7. `Top Ten` 
 
 ## Overview
 เมื่อเราพูดถึง Ramen คงคิดว่าอาหารนี้อยู่ที่ประเทศญี่ปุ่นเพียงประเทศเดียว แต่ที่จริงแล้ว ramen นั้นมีหลายประเทศทั่วโลกที่ให้ความสนใจและนำมันไปขายในประเทศของตนเองจนเกิดอุสาหกรรม ramen ขึ้น ซึ่งกลุ่มของเราได้สนใจในอุสาหกรรมของ ramen และต้องการศึกษาข้อมูลของ ramen ทั่วโลก กลุ่มของเราจึงเลือกชุดข้อมูล Ramen Ratings เพราะต้องการศึกษา ความนิยมหรือความชื่นชอบของผู้คนที่มีผลต่ออุตสาหกรรม ramen ว่ามีมากแค่ไหน และอุตสาหกรรม ramen นั้นมีที่ไหนบ้าง และที่ไหนที่ได้รับความนิยมมากที่สุด
