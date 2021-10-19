@@ -18,7 +18,16 @@ dataset จาก : https://www.kaggle.com/residentmario/ramen-ratings?select=ra
 
 
 ## Step 3 Download Library and dataset
+```{R}
+#Loading Library
+library(readr)
+library(dplyr)
+library(stringr)
+library(assertive)
 
+#Loading Dataset
+ramen_ratings <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/035-Ramen-Ratings/main/ramen-ratings.csv")
+```
 
 ## Step 4 Exploratory Data Analysis
 
