@@ -4,7 +4,7 @@ Datasets from: [Ramen Ratings](https://github.com/sit-2021-int214/035-Ramen-Rati
 ## ⭕ About's Ramen Ratings Datasets
 
 This dataset is about's over 2500 ramen ratings that are collected from around the world. This dataset has 2580 observations with 6 variables. It includes
-1. `Review #`
+1. `Review`
 2. `Brand` 
 3. `Variety` 
 4. `Style` 
@@ -17,12 +17,13 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 
 ## 🎯 Steps
 
-1. Define a question
-2. Collect Data by using survey method
-3. Export Data from Google sheet
-4. Explore Data from Original Data
-5. Data Cleaning and Data Transformation
-6. Exploratory Data Analysis
+1. Search datasets from Kaggle
+2. Explore the dataset from the original dataset
+3. Download Library and dataset
+4. Exploratory Data Analysis
+5. Cleaning Dataset
+6. Define a question
+7. Exploratory Data Analysis with Stat
 
 ## 🧰 Tools
 
