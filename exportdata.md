@@ -1,7 +1,7 @@
-# Ramen Ratings
+# 🍜 Ramen Ratings
 Dataset from : https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings.csv
 
-## My Step
+## 🎯 My Step
 1. Search datasets from Kaggle
 2. Explore the dataset from the original dataset
 3. Download Library and dataset
@@ -10,14 +10,14 @@ Dataset from : https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ra
 6. Define a question
 7. Exploratory Data Analysis with Stat
 
-## Step 1 Search datasets from Kaggle
+## Step1️⃣: Search datasets from Kaggle
 เนื่องจากพวกเรามีความสนใจในรสชาติของราเม็ง เราจึงทำการหา dataset จาก kaggle และไปเจอกับ dataset ramen ratings มาจึงนำ dataset นี้มาใช้
 dataset จาก : https://www.kaggle.com/residentmario/ramen-ratings?select=ramen-ratings.csv
 
-## Step 2 Explore the dataset from the original dataset
+## Step2️⃣: Explore the dataset from the original dataset
 ชุดข้อมูลที่ได้มานั้นเกี่ยวกับคนที่ได้ไปกินราเม็งมาจากสถานที่ต่างๆ หลากหลายรูปแบบ โดยมีข้อมูลต่างๆ เช่น ชื่อสินค้า ประเภท คะแนนที่ให้ ฯลฯ โดยใน dataset นี้เป็นข้อมูลของราเม็งต่างๆของราเม็งทั้งหมด 2580 ชื่อและ ตัวแปรทั้งหมด 7 ตัว(2580 varieties with 7 variables) ตัวแปรทั้งหมดประกอบไปด้วย
 
-1. `Review #`
+1. `Review`
 2. `Brand` 
 3. `Variety` 
 4. `Style` 
@@ -25,7 +25,7 @@ dataset จาก : https://www.kaggle.com/residentmario/ramen-ratings?select=ra
 6. `Stars` 
 7. `Top Ten` 
 
-## Step 3 Download Library and dataset
+## Step3️⃣: Download Library and dataset
 ```{R}
 #Loading Library
 library(readr)
@@ -39,7 +39,7 @@ ramen_ratings <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/035
 ramen <- ramen_rating
 ```
 
-## Step 4 Exploratory Data Analysis
+## Step4️⃣: Exploratory Data Analysis
 ตัวแปรทั้ง 7 ตัว มีควาหมายดังนี้
 1. Review # = ลำดับที่รีวิว
 2. Brand    = ยี่ห้อของราเม็ง
@@ -54,7 +54,7 @@ ramen <- ramen_rating
 และเราได้ทำการนำข้อมูล Top ten ออก เนื่องจากมี 2 ข้อมูลใน column เดียวกันเวลาเรียงข้อมูลอาจทำให้สับสนได้
 และ column stars ต้องการให้เก็บแค่ numeric เพราะ มีการเก็บค่าทั้งตัวเลขและคำว่า unrated เราจึงทำการ นำ unrated ออก เพื่อให้เก็บค่าเป็นตัวเลขเพียงอย่างเดียว
 
-## Step 5 Cleaning Dataset
+## Step5️⃣: Cleaning Dataset
 ### Check type ของ dataset
 ```{R}
 glimpse(ramen_rating)
@@ -98,15 +98,14 @@ is.numeric(ramen$Stars)
 ramen$Stars <- ramen$Stars %>% str_remove("Unrated") %>% as.numeric() 
 ```
 
-
-## Step 6 Defind a question
+## Step6️⃣: Defind a question
 1. Style ของราเมงมีทั้งหมดกี่แบบ แต่ละแบบมีเท่าไหร่
 2. จงแสดง Type of Ramen ที่ Stars เท่ากับ 5
 3. จงแสดง Brand ทั้งหมดที่ผลิตในประเทศไทย
 4. ประเทศอะไรที่มี Style เป็น Pack มากที่สุดคือประเทศใด
 5. Brand อะไรที่ถูกรีวิวไปมากที่สุด
 
-## Step 7 Exploratory Data Analysis with Stat
+## Step7️⃣: Exploratory Data Analysis with Stat
 ### 1. Style ของราเมงมีทั้งหมดกี่แบบ แต่ละแบบมีเท่าไหร่
 #### Code
 ```{R}
