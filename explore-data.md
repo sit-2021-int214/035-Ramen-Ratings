@@ -27,27 +27,27 @@ dataset จาก : https://www.kaggle.com/residentmario/ramen-ratings?select=ra
 
 ## Step3️⃣: Download Library and dataset
 ```{R}
-#Loading Library
+# Loading Library
 library(readr)
 library(dplyr)
 library(stringr)
 library(assertive)
 library(DescTools)
 
-#Loading Dataset
+# Loading Dataset
 ramen_ratings <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/035-Ramen-Ratings/main/ramen-ratings.csv")
 ramen <- ramen_rating
 ```
 
 ## Step4️⃣: Exploratory Data Analysis
 ตัวแปรทั้ง 7 ตัว มีควาหมายดังนี้
-1. Review # = ลำดับที่รีวิว
+1. Review   = ลำดับที่รีวิว
 2. Brand    = ยี่ห้อของราเม็ง
 3. Variety  = ชื่อเรียกของราเม็ง
 4. Style    = ภาชนะที่ใส่
 5. Country  = ประเทศที่ผลิต
 6. Stars    = คะแนนที่ให้ (0 ถึง 5)
-7. Top ten  = อันดับของราเม็งที่ได้ในปีนั้นๆ(นับแค่ top 10)
+7. Top ten  = อันดับของราเม็งที่ได้ในปีนั้นๆ (นับแค่ top 10)
 
 หลังจากที่ดูความหมายของตัวแปรทั้งหมดแล้ว พบว่ามีบางชื่อที่ดูแล้วอาจสับสนได้นั่นคือ Review # และ variety
 เราจึงทำการเปลี่ยนชื่อจาก Review # เป็น Review_Number และ variety เป็น Type_of_ramen
@@ -55,11 +55,11 @@ ramen <- ramen_rating
 และ column stars ต้องการให้เก็บแค่ numeric เพราะ มีการเก็บค่าทั้งตัวเลขและคำว่า unrated เราจึงทำการ นำ unrated ออก เพื่อให้เก็บค่าเป็นตัวเลขเพียงอย่างเดียว
 
 ## Step5️⃣: Cleaning Dataset
-### Check type ของ dataset
+### ตรวจสอบ type ของ dataset
 ```{R}
 glimpse(ramen_rating)
 ```
-### Result
+### ผลลัพธ์
 ```{R}
 Rows: 2,580
 Columns: 7
