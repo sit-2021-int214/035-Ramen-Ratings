@@ -45,7 +45,7 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 
 ### References
 
-- [Ramen Ratings](https://www.kaggle.com/residentmario/ramen-ratings)
+- Datasets: [Ramen Ratings](https://www.kaggle.com/residentmario/ramen-ratings)
 
 ## 🔍 About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
