@@ -39,7 +39,7 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 
 ### Important Files in Repository
 
-- Exploratory Data Analysis: [ramen-ratings-analysis.R](./ramen_ratings.r) 
+- Exploratory Data Analysis: [ramen-ratings-analysis.r](./ramen-ratings-analysis.r) 
 - Original Dataset: [ramen-ratings-original.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings-original.csv)
 - Clean Dataset: [ramen-ratings-clean.csv](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings-clean.csv)
 
