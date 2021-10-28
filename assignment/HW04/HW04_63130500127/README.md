@@ -174,7 +174,7 @@ line <- csv_books %>% ggplot(aes(x = Price, y=Number_Of_Pages))
 line + geom_smooth()
 ```
 ### Result 
-![linechart](./chart/pieChart01.png)
+![linechart](./linechart.png)
 
 ### 2). กราฟแท่งแสดงจำนวนทั้งหมดของ type 
 ```{R}
@@ -186,4 +186,4 @@ bars
 ```
 
 ### Result
-![barchart]
+![barchart](./barchart.png)
