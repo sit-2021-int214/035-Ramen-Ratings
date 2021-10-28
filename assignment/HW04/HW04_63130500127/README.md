@@ -167,5 +167,23 @@ csv_books %>% select(Type, Reviews) %>%
 ```
 ## Part 4: Visualization with GGplot2
 
+### 1). กราฟเส้นแสดงความสัมภัณธ์ระหว่าง ratings และ price
+```{R}
+line <- csv_books %>% ggplot(aes(x = Price, y=Number_Of_Pages)) 
+        + geom_line(aes(color = Type))
+line + geom_smooth()
+```
+### Result 
+![linechart](./chart/pieChart01.png)
 
-![piechart](./chart/pieChart01.png)
+### 2). กราฟแท่งแสดงจำนวนทั้งหมดของ type 
+```{R}
+bars <- csv_books %>% ggplot(aes(x = as.factor(Type), fill = as.factor(Type))) 
+        + geom_bar() +
+        scale_fill_brewer(palette = "Set1") +
+        theme(legend.position="none")
+bars
+```
+
+### Result
+![barchart]
