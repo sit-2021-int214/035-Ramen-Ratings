@@ -72,7 +72,9 @@ Function select , filter , arrange from package [dplyr](https://dplyr.tidyverse.
 ### Example of dplyr function:
 
 ```{R}
-prog_book %>% select(Book_title,Rating) %>% filter(Rating>4.50) %>% arrange(desc(Rating))
+prog_book %>% select(Book_title,Rating) %>% 
+  filter(Rating>4.50) %>% 
+  arrange(desc(Rating))
 ```
 ### Result:
 
@@ -92,7 +94,8 @@ prog_book %>% select(Book_title,Rating) %>% filter(Rating>4.50) %>% arrange(desc
 ## Part 3: Transform data with dplyr and finding insight the data
 ### 1). หนังสือที่มีราคาถูกที่สุด
 ```{R}
-prog_book %>% select(Book_title,Rating,Price) %>% filter(Price == min(Price))
+prog_book %>% select(Book_title,Rating,Price) %>% 
+  filter(Price == min(Price))
 ```
 ### Result
 ```{R}
@@ -101,7 +104,8 @@ prog_book %>% select(Book_title,Rating,Price) %>% filter(Price == min(Price))
 ```
 ### 2). หนังสือประเภท ebook มีทั้งหมดกี่เล่ม
 ```{R}
-prog_book %>% select(Book_title,Type) %>% filter(Type == "ebook")
+prog_book %>% select(Book_title,Type) %>% 
+  filter(Type == "ebook")
 ```
 ### Result
 ```{R}
@@ -131,7 +135,8 @@ prog_book %>% group_by(Type) %>% summarise(avg=mean(Rating))
 ```
 ### 4). หนังสือที่ไม่มีการรีวิวและจำนวนหน้าหนังสือต่ำกว่า 200
 ```{R}
-prog_book %>% select(Book_title,Reviews,Number_Of_Pages) %>% filter(Reviews == 0,Number_Of_Pages < 200)
+prog_book %>% select(Book_title,Reviews,Number_Of_Pages) %>% 
+  filter(Reviews == 0,Number_Of_Pages < 200)
 ```
 ### Result
 ```{R}
@@ -143,7 +148,8 @@ prog_book %>% select(Book_title,Reviews,Number_Of_Pages) %>% filter(Reviews == 0
 ```
 ### 5). หนังสือที่มีเรตติ้งน้อยที่สุด 5 อันดับ
 ```{R}
-prog_book %>% select(Book_title, Rating) %>% arrange(Rating) %>% head(n = 5)
+prog_book %>% select(Book_title, Rating) %>% 
+  arrange(Rating) %>% head(n = 5)
 ```
 ### Result
 ```{R}
@@ -176,20 +182,22 @@ str_subset(prog_book$Book_title,"Data")
 [14] "An Introduction to Database Systems"  
 ```
 ## Part 4: Visualization with GGplot2
-### 1). Pie chart of Rating of each Type
+### 1). กราฟแสดงจำนวนประเภทหนังสือ
 ```{R}
-ggplot(csv_books, aes(x="", y=Rating, fill=Type)) +
-  geom_bar(stat="identity", width=1) +
-  coord_polar("y", start=0)
+ggplot(prog_book) + 
+  aes(x = Type, color = Type, fill = Type) + 
+  geom_density(alpha = 0.25) + 
+  ggtitle("Number of type of book") + 
+  xlab("Type")+ylab("Count")
 ```
 ### Result 
-![piechartratetype](./piechartratetype.png)
+![graph1](./graph1.png)
 
-### 2). Scatter plot of price and Rating
+### 2). กราฟแสดงความสัมพันธ์ระหว่างเรตติ้งกับจำนวนหน้า
 ```{R}
-ggplot(csv_books, aes(x=Price, y=Rating)) + 
+prog_book %>% ggplot(aes(x=Rating,y=Number_Of_Pages)) + 
   geom_point()
 ```
 ### Result 
-![scatterpricerate](./scatterpricerate.png)
+![graph2](./graph2.png)
 
