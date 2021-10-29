@@ -36,7 +36,7 @@ prog_book %>% group_by(Type) %>% summarise(avg=mean(Rating))
 prog_book %>% select(Book_title,Reviews,Number_Of_Pages) %>% filter(Reviews == 0,Number_Of_Pages < 200)
 
 # 5
-prog_book %>% select(Book_title, Rating) %>% arrange(Rating) %>% head(n = 10)
+prog_book %>% select(Book_title, Rating) %>% arrange(Rating) %>% head(n = 5)
 
 # 6
 str_subset(prog_book$Book_title,"Data")
