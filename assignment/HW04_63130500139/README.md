@@ -55,5 +55,13 @@ $ Price           <dbl> 9.323529, 11.000000, 11.267647, 12.873529, 13.164706, 14
 |6. Type            |character|
 |7. Price           |double   |
 ## Part 2: Learning function from Tidyverse
-- Function `geom_line()` from package [ggplot2](https://ggplot2.tidyverse.org/reference/geom_path.html?q=geom%20_%20line)). The result is displayed as a line graph.
+
 ## Part 3: Transform data with dplyr and finding insight the data
+### 1). 
+```{R}
+
+```
+### Result
+```{R}
+
+```
