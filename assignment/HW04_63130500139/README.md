@@ -74,11 +74,104 @@ Result:
 3 The Quark and the Jaguar: Adventures in the Simple and the Complex    3.85  16.4 Paperback
 ```
 ## Part 3: Transform data with dplyr and finding insight the data
-### 1). 
+### 1). Mean book price
 ```{R}
-
+mean(csv_books$Price)
 ```
 ### Result
 ```{R}
-
+[1] 54.54186
 ```
+### 2). Books title with rating more than 4.5
+```{R}
+csv_books %>% 
+  select(Book_title,Rating) %>%
+  filter(Rating > 4.5)
+```
+### Result
+```{R}
+                                                                                                 Book_title Rating
+1                                           ZX Spectrum Games Code Club: Twenty fun games to code and learn   4.62
+2                                                                                   Your First App: Node.js   5.00
+3                       The Elements of Computing Systems: Building a Modern Computer from First Principles   4.54
+4               Build Web Applications with Java: Learn every aspect to build web applications from scratch   4.67
+5  Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems   4.72
+6                             The Linux Programming Interface: A Linux and Unix System Programming Handbook   4.62
+7                                                                  Practical Object Oriented Design in Ruby   4.54
+8                                                  Fluent Python: Clear, Concise, and Effective Programming   4.67
+9                                                                          CLR via C# (Developer Reference)   4.58
+10                                                  The Art of Computer Programming, Volumes 1-4a Boxed Set   4.77
+```
+### 3). Count each type
+```{R}
+csv_books %>%
+  group_by(Type) %>% count()
+```
+### Result
+```{R}
+# A tibble: 6 x 2
+# Groups:   Type [6]
+  Type                      n
+  <chr>                 <int>
+1 Boxed Set - Hardcover     1
+2 ebook                     7
+3 Hardcover                95
+4 Kindle Edition           10
+5 Paperback               156
+6 Unknown Binding           2
+```
+### 4). Book title with less than 300 pages
+```{R}
+csv_books %>% 
+  select(Book_title,Number_Of_Pages) %>%
+  filter(Number_Of_Pages < 200)
+```
+### Result
+```{R}
+                                                                                              Book_title Number_Of_Pages
+1                                                                                  The Elements of Style             105
+2                                                           Responsive Web Design Overview For Beginners              50
+3                                        ZX Spectrum Games Code Club: Twenty fun games to code and learn             128
+4  Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems             192
+5                                       What Is Life? with Mind and Matter and Autobiographical Sketches             184
+6                                                                             JavaScript: The Good Parts             153
+7                                    The Pattern on the Stone: The Simple Ideas that Make Computers Work             176
+8                                                                                 The Connection Machine             190
+9                                                          Agile Retrospectives: Making Good Teams Great             170
+10                                                                        Scrum and XP from the Trenches             140
+11                                 Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman             176
+12                                                          The Principles of Object-Oriented JavaScript             120
+13                         Python Programming For Beginners: Quick And Easy Guide For Python Programmers             190
+14                                           The Golden Ticket: P, Np, and the Search for the Impossible             176
+15                                                         Blueprints Visual Scripting for Unreal Engine             188
+16                                                                   Learn You a Haskell for Great Good!             176
+17                                       Think Complexity: Complexity Science and Computational Modeling             160
+18                                                                                         A Tour of C++             192
+19                                                        The Visual Display of Quantitative Information             197
+20                           The It Handbook for Business: Managing Information Technology Support Costs             180
+21                                    DIV, Grad, Curl, and All That: An Informal Text on Vector Calculus             176
+22                                               Lambda-Calculus, Combinators and Functional Programming             192
+```
+### 5). 
+```{R}
+csv_books %>% 
+  select(Book_title,Price) %>% 
+  filter(Price == min(Price)) 
+```
+### Result
+```{R}
+Book_title    Price
+1 The Elements of Style 9.323529
+```
+### 6). Max number of pages
+```{R}
+csv_books %>% 
+  select(Book_title,Number_Of_Pages) %>% 
+  filter(Number_Of_Pages == max(Number_Of_Pages)) 
+```
+### Result
+```{R}
+                                               Book_title Number_Of_Pages
+1 The Art of Computer Programming, Volumes 1-4a Boxed Set            3168
+```
+## Part 4: Visualization with GGplot2
