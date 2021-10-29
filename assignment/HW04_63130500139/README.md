@@ -55,7 +55,24 @@ $ Price           <dbl> 9.323529, 11.000000, 11.267647, 12.873529, 13.164706, 14
 |6. Type            |character|
 |7. Price           |double   |
 ## Part 2: Learning function from Tidyverse
-
+- using function from [dplyr](https://dplyr.tidyverse.org/index.html) to find book title about adventure
+```{R}
+csv_books %>% 
+  filter(stringr::str_detect(Book_title,"Adventure")) %>% 
+  group_by(Type) %>% 
+  select(Book_title,Rating,Price,Type) %>%
+  arrange(desc(Rating))
+```
+Result:
+```{R}
+ A tibble: 3 x 4
+# Groups:   Type [2]
+  Book_title                                                          Rating Price Type     
+  <chr>                                                                <dbl> <dbl> <chr>    
+1 Adventures in Minecraft                                               4.37  21.0 Paperback
+2 Ghost in the Wires: My Adventures as the World's Most Wanted Hacker   3.97  12.9 Hardcover
+3 The Quark and the Jaguar: Adventures in the Simple and the Complex    3.85  16.4 Paperback
+```
 ## Part 3: Transform data with dplyr and finding insight the data
 ### 1). 
 ```{R}
