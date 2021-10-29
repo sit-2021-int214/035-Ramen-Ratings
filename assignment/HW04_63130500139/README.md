@@ -120,7 +120,7 @@ csv_books %>%
 5 Paperback               156
 6 Unknown Binding           2
 ```
-### 4). Book title with less than 300 pages
+### 4). Book title with less than 200 pages
 ```{R}
 csv_books %>% 
   select(Book_title,Number_Of_Pages) %>%
@@ -152,7 +152,7 @@ csv_books %>%
 21                                    DIV, Grad, Curl, and All That: An Informal Text on Vector Calculus             176
 22                                               Lambda-Calculus, Combinators and Functional Programming             192
 ```
-### 5). 
+### 5). Min book price
 ```{R}
 csv_books %>% 
   select(Book_title,Price) %>% 
