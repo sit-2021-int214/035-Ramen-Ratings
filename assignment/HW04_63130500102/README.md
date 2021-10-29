@@ -183,6 +183,7 @@ str_subset(prog_book$Book_title,"Data")
 ```
 ## Part 4: Visualization with GGplot2
 ### 1). กราฟแสดงจำนวนประเภทหนังสือ
+### Code:
 ```{R}
 ggplot(prog_book) + 
   aes(x = Type, color = Type, fill = Type) + 
@@ -190,14 +191,15 @@ ggplot(prog_book) +
   ggtitle("Number of type of book") + 
   xlab("Type")+ylab("Count")
 ```
-### Result 
+### Result:
 ![graph1](./graph1.png)
 
 ### 2). กราฟแสดงความสัมพันธ์ระหว่างเรตติ้งกับจำนวนหน้า
+### Code:
 ```{R}
 prog_book %>% ggplot(aes(x=Rating,y=Number_Of_Pages)) + 
   geom_point()
 ```
-### Result 
+### Result:
 ![graph2](./graph2.png)
 
