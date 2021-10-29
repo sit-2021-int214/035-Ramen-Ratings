@@ -175,3 +175,11 @@ csv_books %>%
 1 The Art of Computer Programming, Volumes 1-4a Boxed Set            3168
 ```
 ## Part 4: Visualization with GGplot2
+### 1). Pie chart of price
+```{R}
+ggplot(csv_books, aes(x="", y=Rating, fill=Type)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0)
+```
+### Result 
+![piechartprice](./piechartprice.png)
