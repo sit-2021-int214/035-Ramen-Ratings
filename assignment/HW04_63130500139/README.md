@@ -14,8 +14,16 @@
 ## Part 1: Import and Explore the dataset
 
 ```R
+#install
+install.packages("dplyr")
+install.packages("readr")
+install.packages("ggplot2")
+install.packages("stringr")
 #Library
-library(dplyr , readr , ggplot2)
+library(dplyr)
+library(stringr)
+library(readr)
+library(ggplot2)
 csv_books <- read.csv("https://raw.githubusercontent.com/safesit23/INT214-Statistics/main/datasets/prog_book.csv")
 #Explore
 is.character(csv_books$Reviews)
