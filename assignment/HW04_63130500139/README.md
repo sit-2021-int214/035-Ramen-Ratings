@@ -182,4 +182,13 @@ ggplot(csv_books, aes(x="", y=Rating, fill=Type)) +
   coord_polar("y", start=0)
 ```
 ### Result 
-![piechartprice](./piechartprice.png)
+![piechartratetype](./piechartratetype.png)
+
+### 2). Scatter plot of price and Rating
+```{R}
+ggplot(csv_books, aes(x=Price, y=Rating)) + 
+  geom_point()
+```
+### Result 
+![scatterpricerate](./scatterpricerate.png)
+
