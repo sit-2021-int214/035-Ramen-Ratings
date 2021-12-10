@@ -60,7 +60,7 @@ ramen <- ramen_rating
 glimpse(ramen_rating)
 ```
 ### ผลลัพธ์
-```{R}
+``` ruby
 Rows: 2,580
 Columns: 7
 $ Review.. <int> 2580, 2579, 2578, 2577, 2576, 2575, 2574, 2573, 2572, 2571, 2570, 2569, 2568, 2567, 2566, ~
@@ -73,7 +73,7 @@ $ Top.Ten  <chr> "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
 ```
 
 ### เปลี่ยนชื่อตัวแปร
-```{R}
+``` ruby
 ramen <- ramen %>% rename(
   
   Type_of_ramen = Variety,
@@ -83,17 +83,19 @@ ramen <- ramen %>% rename(
 ```
 
 ### จัดเรียงข้อมูล
-```{R}
-ramen <- ramen %>% arrange(ramen,Review_Number)
+``` ruby
+ramen <- ramen %>% 
+      arrange(ramen,Review_Number)
 ```
 
 ### ลบ column Top ten ออก
-```{R}
-ramen <- ramen %>% select(-Top.Ten)
+``` ruby
+ramen <- ramen %>% 
+      select(-Top.Ten)
 ```
 
 ### แปลงข้อมูลจาก character เป็น numeric
-```{R}
+``` ruby
 is.numeric(ramen$Stars)
 ramen$Stars <- ramen$Stars %>% str_remove("Unrated") %>% as.numeric() 
 ```
@@ -108,8 +110,9 @@ ramen$Stars <- ramen$Stars %>% str_remove("Unrated") %>% as.numeric()
 ## Step7️⃣: Exploratory Data Analysis with Stat
 ### 1. Style ของราเมงมีทั้งหมดกี่แบบ แต่ละแบบมีเท่าไหร่
 #### Code
-```{R}
-ramen %>% count(ramen$Style)
+```ruby
+  ramen %>% 
+  count(ramen$Style)
 ```
 
 #### Result
@@ -139,8 +142,10 @@ Can มีจำนวน 1 รีวิว
 
 ### 2. จงแสดง Type of Ramen ที่ Stars เท่ากับ 5
 #### Code
-```{R}
-ramen %>% select(Type_of_ramen) %>% filter(ramen$Stars==5) 
+``` ruby
+  ramen %>% 
+      select(Type_of_ramen) %>% 
+      filter(ramen$Stars==5) 
 ```
 
 #### Result
@@ -178,8 +183,10 @@ Type_of_ramen
 
 ### 3. จงแสดงจำนวน Brand ทั้งหมดที่ผลิตในประเทศไทย
 #### Code
-```{R}
-ramen %>% filter(ramen$Country == "Thailand") %>% count(Brand)
+``` ruby
+ramen %>% 
+      filter(ramen$Country == "Thailand") %>% 
+      count(Brand)
 ```
 
 #### Result
@@ -219,8 +226,10 @@ Brand ที่มีในประเทศไทยมีทั้งหม�
 
 ### 4. ประเทศอะไรที่มี Style เป็น Pack มากที่สุดคือประเทศใด
 #### Code
-```{R}
-ramen %>% filter(ramen$Style == "Pack") %>% summarise(Mode(Country))
+``` ruby
+ramen %>% 
+      filter(ramen$Style == "Pack") %>% 
+      summarise(Mode(Country))
 ```
 
 #### Result
@@ -235,8 +244,9 @@ ramen %>% filter(ramen$Style == "Pack") %>% summarise(Mode(Country))
 
 ### 5. Brand อะไรที่ถูกรีวิวไปมากที่สุด
 #### Code
-```{R}
-ramen %>% summarise(Mode(Brand))
+``` ruby
+ramen %>% 
+      summarise(Mode(Brand))
 ```
 
 #### Result
