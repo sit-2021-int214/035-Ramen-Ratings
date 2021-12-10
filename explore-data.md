@@ -26,7 +26,7 @@ dataset จาก : https://www.kaggle.com/residentmario/ramen-ratings?select=ra
 7. `Top Ten` 
 
 ## Step3️⃣: Download Library and dataset
-```{R}
+``` ruby
 # Loading Library
 library(readr)
 library(dplyr)
