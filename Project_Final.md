@@ -89,7 +89,8 @@ ramen$Stars <- ramen$Stars %>% str_remove("Unrated") %>% as.numeric()
 
 ## Step3️⃣ : Analytical Inferential Statistics
 ### No.1 : Brand ที่มีความนิยมสูงที่สุดในแต่ละประเทศ มีอะไรบ้าง
+สมมตืฐาน : brand Nissin มีความนิยมสูงที่สุดในประเทศส่วนใหญ่ เพราะเป็น brand ที่มีความเก่าแก่ที่สุด
 
-
+### No.2 : 
 
 ## Step4️⃣ : Data Visualization
