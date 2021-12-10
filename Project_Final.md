@@ -88,5 +88,8 @@ ramen$Stars <- ramen$Stars %>% str_remove("Unrated") %>% as.numeric()
 ```
 
 ## Step3️⃣ : Analytical Inferential Statistics
+### No.1 : Brand ที่มีความนิยมสูงที่สุดในแต่ละประเทศ มีอะไรบ้าง
+
+
 
 ## Step4️⃣ : Data Visualization
