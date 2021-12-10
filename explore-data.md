@@ -56,7 +56,7 @@ ramen <- ramen_rating
 
 ## Step5️⃣: Cleaning Dataset
 ### ตรวจสอบ type ของ dataset
-```{R}
+``` ruby
 glimpse(ramen_rating)
 ```
 ### ผลลัพธ์
