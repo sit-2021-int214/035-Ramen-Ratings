@@ -1,5 +1,5 @@
 # 🍜 Ramen Ratings
-Dataset from : https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings.csv
+Dataset from : https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/ramen-ratings-original.csv
 
 ## 🎯 My Step
 1. Search datasets from Kaggle
