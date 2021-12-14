@@ -33,7 +33,7 @@ This dataset is about's over 2500 ramen ratings that are collected from around t
 ## 📌 Table of Contents
 
 1. [Data Cleaning/Exploratory Data Analysis](./explore-data.md)
-2. [Data Visualization]()
+2. [Data Visualization](./data_vis.md)
 3. [Analytical Inferential Statistics](./Hypothesis_Testing.md)
 
 ## 🔗 Resources
