@@ -70,3 +70,6 @@ zalpha <- qnorm(alpha);
 P-value approach : "Reject H0"
 critical value approach : "Reject H0"
 ```
+
+### Step 6 : Conclusion
+จากการทดสอบสมมุติฐานสรุปว่า ไม่เป็นไปตามสมมุติฐานข้างต้นคือ คะแนนเฉลี่ยของ ramen ชนิด Pack มีคะแนนเฉลี่ยน้อยกว่า 3.7 คะแนน
