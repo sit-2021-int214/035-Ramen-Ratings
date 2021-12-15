@@ -2,7 +2,7 @@
 
 ### Dashboard: [click](https://app.powerbi.com/view?r=eyJrIjoiZmE4MmFlOTctNDU4Mi00NmExLWFmNjQtOWJiMjlhNTBmYzVmIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
 
-![img](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/powerbi.png)
+![img](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/powerBi.jpg)
 
 ### จากการใช้ Bi tool ในการสำรวจข้อมูล ทำให้ทราบข้อมูลดังนี้
 
