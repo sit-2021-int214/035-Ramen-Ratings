@@ -1,6 +1,6 @@
 # Data Visualization (BI Tools)
 
-### Dashboard: [click](https://app.powerbi.com/view?r=eyJrIjoiZmE4MmFlOTctNDU4Mi00NmExLWFmNjQtOWJiMjlhNTBmYzVmIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
+### Dashboard: [click](https://app.powerbi.com/view?r=eyJrIjoiNTAxMjU1YjktNWNlZi00ZmFjLTllZDAtMDQxNmExOTJlM2NkIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D)
 
 ![img](https://github.com/sit-2021-int214/035-Ramen-Ratings/blob/main/powerBi.jpg)
 
